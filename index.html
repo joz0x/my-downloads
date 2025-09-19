@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="refresh" content="0; url='https://github.com/joz0x/my-downloads/blob/main/me.pyw'" />
+  <title>Instant Download</title>
 </head>
 <body>
-  <p>If your download doesn’t start automatically, <a href="https://github.com/joz0x/my-downloads/blob/main/me.pyw">click here</a>.</p>
+  <h1>Click to Download</h1>
+  <button onclick="downloadFile()">Download Now</button>
+
+  <script>
+    function downloadFile() {
+      const link = document.createElement("a");
+      link.href = "https://github.com/joz0x/my-downloads/blob/main/me.pyw";   // replace with your file path or raw GitHub link
+      link.download = "https://github.com/joz0x/my-downloads/blob/main/me.pyw"; // suggested filename
+      link.click();
+    }
+  </script>
 </body>
 </html>
